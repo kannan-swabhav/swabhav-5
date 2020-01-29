@@ -12,9 +12,9 @@ public class WelcomeTest {
 		System.out.println(0);
 		System.out.println(2.33);
 		System.out.println(" hey");
-		System.out.println();
+		System.out.println(1>2);;
 
-		printInfo("2");
+		printInfo("hello");
 
 		String str = "http//swabhavtechlabs.com?developerispawan&roleisarchitect";
 		String[] SplitStr = str.split("http//|.com\\?developeris|&roleis");
@@ -25,23 +25,23 @@ public class WelcomeTest {
 
 	}
 
-	public static void printInfo(String a) {
+	private static void printInfo(String a) {
 		System.out.println(a);
 	}
 
-	public static void printInfo(float a) {
+	private static void printInfo(float a) {
 		System.out.println(a);
 	}
 
-	public static void printInfo(int a) {
+	private static void printInfo(int a) {
 		System.out.println(a);
 	}
 
-	public static void printInfo(char a) {
+	private static void printInfo(char a) {
 		System.out.println(a);
 	}
 
-	public static void printInfo(Double a) {
+	private static void printInfo(Double a) {
 		System.out.println(a);
 	}
 
