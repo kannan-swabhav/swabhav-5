@@ -1,7 +1,5 @@
-package UrlExtraction;
 
 public class UrlExtractionTest {
-
 	public static void main(String[] args) {
 
 		String str = "http://www.swabhavtechlabs.com?developer=jay@role=architect";
@@ -10,7 +8,6 @@ public class UrlExtractionTest {
 		// String str = "http://www.swabhavtechlabs.com?role=architect@developer=jay";
 
 		String[] terms = str.split("[@&?$+-]+");
-
 
 		int start = str.indexOf("www.");
 		int end = str.indexOf(".com");
