@@ -8,6 +8,7 @@ public class UrlExtractSplitString {
 		// String str = "http://www.swabhavtechlabs.com?role=architect@developer=jay";
 
 		String[] terms = str.split("[@&?$+-]+");
+		
 
 		
 		int start = str.indexOf("www.");
@@ -18,4 +19,4 @@ public class UrlExtractSplitString {
 			System.out.println(terms[i]);
 		}
 	}
-}
+} 

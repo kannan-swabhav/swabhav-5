@@ -23,7 +23,7 @@ public class StringArrayTest {
 				
 				
 			
-			}
+			} 
 		}
 		
 		//length = name.length();

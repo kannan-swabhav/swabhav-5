@@ -21,7 +21,7 @@ public class UrlExtractionSubString {
 				System.out.println("String is emopty");
 			}
 		start = str.indexOf("per=");
-		end = str.indexOf("@role");
+		end = str.indexOf("@role"); 
 
 		if (start != -1)
 			if (end != -1) {
