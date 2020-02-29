@@ -8,5 +8,6 @@ public class Rectangle {
 		return (width * height);
 
 	}
+	public void set
 
 }

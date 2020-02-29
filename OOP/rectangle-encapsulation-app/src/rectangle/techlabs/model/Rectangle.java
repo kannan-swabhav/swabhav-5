@@ -1,8 +1,8 @@
 package rectangle.techlabs.model;
 
 public class Rectangle {
-	private int width;
-	private int height;
+	private int width = 5;
+	private int height = 10 ;
 
 	public void changeWidth(int pwidth) {
 		if (pwidth < 0) {
@@ -34,6 +34,10 @@ public class Rectangle {
 
 	public int readHeight() {
 		return height;
+	}
+	
+	public int calculateArea() {
+		return (width*height);
 	}
 
 }

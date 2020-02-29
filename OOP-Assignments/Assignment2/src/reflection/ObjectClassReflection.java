@@ -1,5 +1,6 @@
 package reflection;
 
+import java.io.PrintStream;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -7,7 +8,7 @@ import java.lang.reflect.Modifier;
 public class ObjectClassReflection {
 
 	public static void main(String[] args) {
-		Class reflectionClass = Object.class;
+		Class reflectionClass = PrintStream.class;
 
 		String className = reflectionClass.getName();
 		System.out.println("Class name is : " + className);
