@@ -10,46 +10,46 @@ import java.util.Scanner;
 public class FileHandlingTest {
 	public static void main(String args[]) throws IOException {
 		int count = 0;
+
 		File file = createFile("file.txt");
-		count = writeToFile(file, "hello",count);
-		readFromfile(file.getAbsolutePath());
+		count = writeToFile(file, "hello", count);
+		readFromfile(file);
 
 		System.out.println();
-		count = writeToFile(file, "hello2",count);
-		readFromfile(file.getAbsolutePath());
-		
-		System.out.println();
-		count = writeToFile(file, "hello3",count);
-		readFromfile(file.getAbsolutePath());
-		
-		
+		count = writeToFile(file, "hello2", count);
+		readFromfile(file);
 
+		System.out.println();
+		count = writeToFile(file, "hello3", count);
+		readFromfile(file);
+
+		
 	}
 
 	public static File createFile(String filename) {
-		File file = new File(filename);
-		System.out.println("new file created " + file.getName());
-		return file;
+
+		File newfile = new File(filename);
+		System.out.println("new file created" + newfile.getName());
+		return newfile;
+		
 	}
 
-	public static int writeToFile(File file, String txt,int count) throws IOException  {
+	public static int writeToFile(File file, String txt, int count) throws IOException {
 
 		FileWriter fr = new FileWriter(file, true);
-		if(count == 0) {
-		fr.write(txt);
-		count++;
-		}
-		else {
-			fr.write(" " +txt);
+		if (count == 0) {
+			fr.write(txt);
+			count++;
+		} else {
+			fr.write(" " + txt);
 		}
 		fr.close();
 		return count;
-		
 
 	}
 
-	public static void readFromfile(String absolutepath) throws IOException {
-		FileReader fr = new FileReader(absolutepath);
+	public static void readFromfile(File file) throws IOException {
+		FileReader fr = new FileReader(file);
 
 		int end;
 		while ((end = fr.read()) != -1)

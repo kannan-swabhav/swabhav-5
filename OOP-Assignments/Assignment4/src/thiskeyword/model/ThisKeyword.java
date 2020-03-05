@@ -6,7 +6,7 @@ public class ThisKeyword {
 	private int rollno;
 
 	
-	//distinguish between local variables and instance variables of class
+	//distinguish between instance variables and local variables
 	public ThisKeyword(String name, int age) {
 		this.name = name;   // this used to point to instance variables of the class
 		this.age = age ;   
